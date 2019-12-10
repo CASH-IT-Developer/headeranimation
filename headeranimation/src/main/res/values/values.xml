@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="string|enum" name="animWaves">
+        <enum name="MultiWave" value="-1"/>
+        <enum name="PairWave" value="-2"/>
+    </attr>
+    <declare-styleable name="HeaderAnimation"><attr format="dimension" name="animWaveHeight"/><attr format="color" name="animStartColor"/><attr format="color" name="animCloseColor"/><attr format="boolean" name="animIsRunning"/><attr format="fraction|float" name="animColorAlpha"/><attr format="fraction|float" name="animProgress"/><attr format="fraction|float" name="animVelocity"/><attr format="integer" name="animGradientAngle"/><attr name="animWaves"/></declare-styleable>
+    <string name="app_name">Library</string>
+    <style name="HeaderAnimation">
+    </style>
+    <style name="HeaderAnimation.Wave">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+</resources>

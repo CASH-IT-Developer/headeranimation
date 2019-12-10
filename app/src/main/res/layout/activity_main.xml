@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.cashit.HeaderAnimation
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:animCloseColor="@color/colorPrimary"
+        app:animColorAlpha="0.25"
+        app:animGradientAngle="90"
+        app:animIsRunning="true"
+        app:animProgress="1"
+        app:animStartColor="@color/colorPrimaryDark"
+        app:animVelocity="10"
+        app:animWaveHeight="10dp"
+        app:animWaves="MultiWave">
+
+    </com.cashit.HeaderAnimation>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cash IT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/waveHeader"
+        app:layout_constraintTop_toBottomOf="@+id/waveHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
